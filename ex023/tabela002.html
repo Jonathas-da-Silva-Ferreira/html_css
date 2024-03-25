@@ -8,9 +8,11 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         th{
@@ -34,7 +36,21 @@
             background-color: rgb(27, 13, 13);
             color: white;
         }
+
+         thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: rgb(27, 13, 13);
+     }
+
+        tbody > tr:nth-child(even){ /*2n-1*/
+            background-color: white;
+        }
         
+        tbody > tr:nth-child(odd){ /*2n */
+            background-color: rgba(156, 156, 156, 0.842);
+        }
+
         td.num{
             text-align: right;
         }
