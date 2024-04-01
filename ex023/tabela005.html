@@ -25,6 +25,15 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        col.cnome{
+            background-color: rgba(128, 128, 128, 0.26);
+        }
+
+        col.csexo{
+            background-color: rgba(8, 17, 133, 0.39);
+        }
+
     </style>
 </head>
 <body>
@@ -32,12 +41,18 @@
     <h1>Exercicio de Tabelas</h1>
 
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo" span="2">
+            <col class="cprof">
+        </colgroup>
+
         <caption>Cadastro</caption>
             <tr>
-                <th>Nome</th>
-                <th>Sexo</th>
-                <th>Idade</th>
-                <th>Profissão</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
             </tr>
 
             <tr>
@@ -73,6 +88,13 @@
                 <td>M</td>
                 <td>28</td>
                 <td>DEV</td>
+            </tr>
+
+            <tr>
+                <td>Jeff</td>
+                <td>M</td>
+                <td>36</td>
+                <td>Redes</td>
             </tr>
     </table>
 </body>
